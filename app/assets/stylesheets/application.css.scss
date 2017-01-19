@@ -14,6 +14,69 @@
  *= require_self
  */
 
+  $white: #ffffff;
+  $highlight: #dc5151;
+  $dark: #000000;
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+
+  .wrapper-wide {
+    width: 90%;
+    margin: auto;
+  }
+
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .wrapper-skinny {
+    width: 60%;
+    margin: auto;
+  }
+
+  .cf:before, .cf:after {
+    content: " ";
+    display: table;
+  }
+
+  .cf:after {
+    clear: both;
+  }
+
+  .button {
+    color: $white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+  }
+
+  .button-highlight {
+    background: $highlight;
+    &:hover {
+      background: darken($highlight, 7.5%);
+      transition: background .4s ease-in-out;
+    }
+  }
+
+  .button-dark {
+    background: $dark;
+    &:hover {
+      background: lighten($dark, 7.5%);
+      transition: background .4s ease-in-out;
+    }
+  }
+
+  @import 'normalize';
+  @import 'welcome';
+
+
  /* checkbox - each time slot */
 .time-slot               {  }
 
