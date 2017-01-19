@@ -1,0 +1,21 @@
+<div class="container" ng-app="scheduleApp" ng-controller="mainController">
+
+  <div class="page-header text-center">
+    <h1>Schedule Appointment</h1>
+  </div>
+
+  <!-- were doing one day with 1 time slot for simplicity -->
+  <!-- we'll use angular's ng-repeat in a bit to get the other days and times -->
+  <div class="row times">
+
+    <%= month_calendar do |date| %>
+    <%= date %>
+  <% end %>
+
+  </div>
+
+  <p class="text-center">
+    <a href="#" class="btn btn-primary">Reset</a>
+  </p>
+
+</div>
